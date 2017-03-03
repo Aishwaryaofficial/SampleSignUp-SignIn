@@ -9,21 +9,31 @@
 import UIKit
 
 class SignUpVC: UIViewController {
+    
+    // MARK: @IBOutlet
 
+    @IBOutlet weak var checkboxOutlet: UIButton!
+    @IBOutlet weak var signInOutlet: UIButton!
+    
+    
+    
+    // MARK: LIFE CYCLE
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        }
+    
+    // MARK : @IBAction
+    
+        @IBAction func checkBoxAction(_ sender: UIButton) {
+        
+        checkboxOutlet.isSelected = !checkboxOutlet.isSelected
 
-        // Do any additional setup after loading the view.
-    }
+        }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
-    @IBOutlet weak var loginAction: UIButton!
-    
-    
 }
+
+    
+        
+    
+
